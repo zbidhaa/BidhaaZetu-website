@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Bidhaa - Duka la Bidhaa Zetu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+            <form onsubmit="event.preventDefault(); searchProducts();">
+                <select id="category" name="category">
+                    <option value="all">Chagua Kategoria</option>
+                    <option value="laptops">Laptop</option>
+                    <option value="phones">phones</option>
+                    <!-- Ongeza kategoria zaidi hapa -->
+                </select>
+                <input type="text" placeholder="Tafuta bidhaa..." name="search" required>
+                <button type="submit">Tafuta</button>
+            </form>
+        </div>
+            </form>
+        </div>
+        <div class="logo">
+            <h1>Bidhaa Zetu</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Nyumbani</a></li>
+                <li><a href="products.html">Bidhaa</a></li>
+                <li><a href="services.html">Huduma</a></li>
+                <li><a href="contact.html">Mawasiliano</a></li>
+            </ul>
+        </nav>
+    </header><section class="products">
+    <h2>Bidhaa Zetu</h2>
+    <div class="grid-container">
+        <!-- Bidhaa 1 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa1.html')">
+            <img src="pc/61kSohqyXwL._SS400_.jpg" alt="Bidhaa 1" loading="lazy">
+            <h3>Bidhaa 1</h3>
+            <p>Bei: Tsh 10,000</p>
+            <button onclick="funguaMaelezo('bidhaa1.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 2 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa2.html')">
+            <img src="simu.jpg" alt="Bidhaa 2" loading="lazy">
+            <h3>Bidhaa 2</h3>
+            <p>Bei: Tsh 15,000</p>
+            <button onclick="funguaMaelezo('bidhaa2.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 3 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa3.html')">
+            <img src="flat tv one.webp" alt="Bidhaa 3" loading="lazy">
+            <h3>Bidhaa 3</h3>
+            <p>Bei: Tsh 20,000</p>
+            <button onclick="funguaMaelezo('bidhaa3.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 4 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa4.html')">
+            <img src="pc/71O0wxCjJKL._AC_SL1500_.jpg" alt="Bidhaa 4" loading="lazy">
+            <h3>Bidhaa 4</h3>
+            <p>Bei: Tsh 25,000</p>
+            <button onclick="funguaMaelezo('bidhaa4.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 5 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa5.html')">
+            <img src="oppo-a3x-2.jpg" alt="Bidhaa 5" loading="lazy">
+            <h3>Bidhaa 5</h3>
+            <p>Bei: Tsh 30,000</p>
+            <button onclick="funguaMaelezo('bidhaa5.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 6 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa6.html')">
+            <img src="infinix s5.jpg" alt="Bidhaa 6" loading="lazy">
+            <h3>Bidhaa 6</h3>
+            <p>Bei: Tsh 35,000</p>
+            <button onclick="funguaMaelezo('bidhaa6.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 7 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa7.html')">
+            <img src="flat tv one.webp" alt="Bidhaa 7" loading="lazy">
+            <h3>Bidhaa 7</h3>
+            <p>Bei: Tsh 40,000</p>
+            <button onclick="funguaMaelezo('bidhaa7.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 8 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa8.html')">
+            <img src="phonee.webp" alt="Bidhaa 8" loading="lazy">
+            <h3>Bidhaa 8</h3>
+            <p>Bei: Tsh 45,000</p>
+            <button onclick="funguaMaelezo('bidhaa8.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 9 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa9.html')">
+            <img src="infinix s5.jpg" alt="Bidhaa 9" loading="lazy">
+            <h3>Bidhaa 9</h3>
+            <p>Bei: Tsh 50,000</p>
+            <button onclick="funguaMaelezo('bidhaa9.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 10 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa10.html')">
+            <img src="vivo-y03.jpg" alt="Bidhaa 10" loading="lazy">
+            <h3>Bidhaa 10</h3>
+            <p>Bei: Tsh 55,000</p>
+            <button onclick="funguaMaelezo('bidhaa10.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 11 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa11.html')">
+            <img src="oppo-a3x-2.jpg" alt="Bidhaa 11" loading="lazy">
+            <h3>Bidhaa 11</h3>
+            <p>Bei: Tsh 60,000</p>
+            <button onclick="funguaMaelezo('bidhaa11.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 12 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa12.html')">
+            <img src="laptop.jpg" alt="Bidhaa 12" loading="lazy">
+            <h3>Bidhaa 12</h3>
+            <p>Bei: Tsh 65,000</p>
+            <button onclick="funguaMaelezo('bidhaa12.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 13 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa13.html')">
+            <img src="maxim-hopman-Hin-rzhOdWs-unsplash.jpg" alt="Bidhaa 13" loading="lazy">
+            <h3>Bidhaa 13</h3>
+            <p>Bei: Tsh 70,000</p>
+            <button onclick="funguaMaelezo('bidhaa13.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 14 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa14.html')">
+            <img src="mika-baumeister-C4wFBBXRyyE-unsplash.jpg" alt="Bidhaa 14" loading="lazy">
+            <h3>Bidhaa 14</h3>
+            <p>Bei: Tsh 75,000</p>
+            <button onclick="funguaMaelezo('bidhaa14.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 15 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa15.html')">
+            <img src="hardik-sharma-CrPAvN29Nhs-unsplash.jpg" alt="Bidhaa 15" loading="lazy">
+            <h3>Bidhaa 15</h3>
+            <p>Bei: Tsh 80,000</p>
+            <button onclick="funguaMaelezo('bidhaa15.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 16 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa16.html')">
+            <img src="infinix s5.jpg" alt="Bidhaa 16" loading="lazy">
+            <h3>Bidhaa 16</h3>
+            <p>Bei: Tsh 85,000</p>
+            <button onclick="funguaMaelezo('bidhaa16.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 17 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa17.html')">
+            <img src="path/to/image17.jpg" alt="Bidhaa 17" loading="lazy">
+            <h3>Bidhaa 17</h3>
+            <p>Bei: Tsh 90,000</p>
+            <button onclick="funguaMaelezo('bidhaa17.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 18 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa18.html')">
+            <img src="path/to/image18.jpg" alt="Bidhaa 18" loading="lazy">
+            <h3>Bidhaa 18</h3>
+            <p>Bei: Tsh 95,000</p>
+            <button onclick="funguaMaelezo('bidhaa18.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 19 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa19.html')">
+            <img src="path/to/image19.jpg" alt="Bidhaa 19" loading="lazy">
+            <h3>Bidhaa 19</h3>
+            <p>Bei: Tsh 100,000</p>
+            <button onclick="funguaMaelezo('bidhaa19.html')">Angalia Maelezo</button>
+        </div>
+
+        <!-- Bidhaa 20 -->
+        <div class="grid-item" onclick="funguaMaelezo('bidhaa20.html')">
+            <img src="path/to/image20.jpg" alt="Bidhaa 20" loading="lazy">
+            <h3>Bidhaa 20</h3>
+            <p>Bei: Tsh 105,000</p>
+            <button onclick="funguaMaelezo('bidhaa20.html')">Angalia Maelezo</button>
+        </div>
+    </div>
+</section>
+<section class="results">
+    <h2>Matokeo ya Utafutaji</h2>
+    <div class="product-grid"></div> <!-- Sehemu hii itajazwa na JavaScript -->
+</section>
+
+<footer>
+    <p>&copy; 2024 Bidhaa Zetu. Haki zote zimehifadhiwa.</p>
+</footer>
+
+    <!-- JavaScript ya kuelekeza kurasa za maelezo ya bidhaa -->
+    <script>
+        function funguaMaelezo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
+
+<script>
+    // Orodha ya bidhaa
+    const products = [
+    { name: "Laptop Bora", price: "Sh 1,500,000", img: "laptop.jpg", category: "laptops" },
+    { name: "Simu Mpya", price: "Sh 800,000", img: "simu.jpg", category: "phones" },
+    ];
+    
+    // Kutoa matokeo ya kutafuta
+    function searchProducts() {
+    const query = document.querySelector('.search-bar input').value.toLowerCase();
+    const selectedCategory = document.getElementById('category').value;
+    const results = products.filter(product => {
+        const matchesQuery = product.name.toLowerCase().includes(query);
+        const matchesCategory = selectedCategory === "all" || product.category === selectedCategory;
+        return matchesQuery && matchesCategory;
+    });
+    displayResults(results);
+}
+
+    
+    
+    // Kuonyesha matokeo
+    function displayResults(results) {
+        const resultsSection = document.querySelector('.results');
+        resultsSection.innerHTML = ''; // Safisha matokeo ya awali
+        results.forEach(product => {
+            const productDiv = document.createElement('div');
+            productDiv.className = 'product';
+            productDiv.innerHTML = `
+                <img src="${product.img}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p>${product.price}</p>
+                <a href="#" class="cta">Nunua Sasa</a>
+            `;
+            resultsSection.appendChild(productDiv);
+        });
+    }
+    function searchProducts() {
+    const query = document.querySelector('.search-bar input').value.toLowerCase();
+    const selectedCategory = document.getElementById('category').value;
+    
+    const matchedProduct = products.find(product => {
+        const matchesQuery = product.name.toLowerCase().includes(query);
+        const matchesCategory = selectedCategory === "all" || product.category === selectedCategory;
+        return matchesQuery && matchesCategory;
+    });
+
+    if (matchedProduct) {
+        // Hamisha mtumiaji kwenye ukurasa wa bidhaa
+        window.location.href = `${matchedProduct.name.replace(/\s+/g, '-').toLowerCase()}.html`; // Hakikisha una ukurasa huu
+    } else {
+        alert("Hakuna bidhaa iliyopatikana.");
+    }
+}
+function searchProducts() {
+    const query = document.querySelector('.search-bar input').value.toLowerCase();
+    const selectedCategory = document.getElementById('category').value;
+
+    let url = '';
+
+    if (selectedCategory === "laptops") {
+        url = 'laptops.html'; // URL ya kategoria ya Laptop
+    } else if (selectedCategory === "phones") {
+        url = 'phones.html'; // URL ya kategoria ya Simu
+    } else {
+        alert("Tafadhali chagua kategoria.");
+        return;
+    }
+
+    // Hamisha mtumiaji kwenye kategoria na neno la utafutaji
+    window.location.href = `${url}?search=${encodeURIComponent(query)}`;
+}
+
+
+    </script>
+    
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo h1 {
+    text-align: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.products {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Ukubwa wa kudumu */
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: 150px; /* Ukubwa wa kudumu wa picha */
+    object-fit: cover; /* Hii inahakikisha picha inakatwa vizuri */
+    border-radius: 5px;
+}
+
+.grid-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.grid-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.grid-item button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.grid-item button:hover {
+    background-color: #218838;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

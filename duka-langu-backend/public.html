@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidhaa Zetu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+            <form id="search-form" onsubmit="event.preventDefault(); searchProducts();">
+                <select id="category" name="category">
+                    <option value="all">Chagua Kategoria</option>
+                    <option value="laptops">Laptop</option>
+                    <option value="phones">Simu</option>
+                    <!-- Ongeza kategoria zaidi hapa -->
+                </select>
+                <input type="text" id="search-query" placeholder="Tafuta bidhaa..." required>
+                <button type="submit">Tafuta</button>
+            </form>
+        </div>
+    </header>
+
+    <section id="results" class="results">
+        <h2>Matokeo ya Utafutaji</h2>
+        <div class="product-grid"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bidhaa Zetu. Haki zote zimehifadhiwa.</p>
+    </footer>
+
+    <script>
+        function searchProducts() {
+            const query = document.getElementById('search-query').value;
+            const category = document.getElementById('category').value;
+
+            // Send GET request to the server to search products
+            fetch(`http://localhost:3000/search?query=${query}&category=${category}`)
+                .then(response => response.json())
+                .then(products => displayResults(products))
+                .catch(error => console.log('Error fetching products:', error));
+        }
+
+        // Display search results
+        function displayResults(products) {
+            const resultsSection = document.querySelector('.product-grid');
+            resultsSection.innerHTML = ''; // Clear previous results
+
+            if (products.length === 0) {
+                resultsSection.innerHTML = `<p>No products found</p>`;
+                return;
+            }
+
+            products.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.className = 'product';
+                productDiv.innerHTML = `
+                    <img src="${product.image_url}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>${product.price}</p>
+                    <button>Angalia Maelezo</button>
+                `;
+                resultsSection.appendChild(productDiv);
+            });
+        }
+    </script>
+</body>
+</html>

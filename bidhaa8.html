@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidhaa 1 - Duka la Bidhaa Zetu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Bidhaa Zetu</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Nyumbani</a></li>
+                <li><a href="products.html">Bidhaa</a></li>
+                <li><a href="services.html">Huduma</a></li>
+                <li><a href="contact.html">Mawasiliano</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Maelezo ya Bidhaa 8</h2>
+
+        <!-- Picha kuu ya bidhaa -->
+        <div class="main-product-image">
+            <img src="phonee.webp" alt="Bidhaa 1" class="main-image">
+        </div>
+
+        <!-- Picha zaidi za bidhaa -->
+        <div class="additional-images">
+            <img src="phonee.webp" alt="Bidhaa 1 - Picha ya Ziada 1">
+            <img src="phonee.webp" alt="Bidhaa 1 - Picha ya Ziada 2">
+            <img src="phonee.webp" alt="Bidhaa 1 - Picha ya Ziada 3">
+        </div>
+
+        <p>Bidhaa hii ni ya kipekee kwa bei nafuu ya Tsh 10,000. Inafaa kwa matumizi ya nyumbani au ofisini.</p>
+        <p>Pia ina vipengele muhimu kama vile:</p>
+        <ul>
+            <li>Uimara wa hali ya juu</li>
+            <li>Ubora wa kipekee</li>
+            <li>Rahisi kutumia</li>
+        </ul>
+
+        <a href="#" class="cta">Nunua Sasa</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bidhaa Zetu. Haki zote zimehifadhiwa.</p>
+    </footer>
+
+    <style>
+        /* Muonekano wa picha kuu */
+        .main-product-image {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .main-product-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 500px;
+        }
+
+        /* Picha za ziada */
+        .additional-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .additional-images img {
+            max-width: 18%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-images img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</body>
+</html>
